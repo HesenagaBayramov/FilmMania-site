@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmMania - Series</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/pagestructure_series.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="../html/index.html">FilmMania</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/movies.html">Movies</a></li>
+            <li><a href="../html/series.html">Series</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+          </ul>
+          <div class="login-btn">
+            <a href="../LoginPage/index.html">Login</a>
+          </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN PART-->
+    <div id="series-container">
+        <h1 id="title"></h1>
+        <div id="content-wrapper">
+          <img id="poster" alt="Series poster">
+          <div id="info">
+            <div id="description">
+              <span id="description"></span>
+            </div>
+            <div id="seriesinfo">
+              <table border="1px">
+                <tr>
+                  <td><p><strong>Director</strong></p></td>
+                  <td><span id="director"></span></td>
+                </tr>
+                <tr>
+                  <td><p><strong>Actors</strong></p></td>
+                  <td><span id="actors"></span></td>
+                </tr>
+                <tr>
+                  <td><p><strong>Year</strong></p></td>
+                  <td><span id="year"></span></td>
+                </tr>
+                <tr>
+                  <td><p><strong>Genre</strong></p></td>
+                  <td><span id="genre"></span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="trailervideo">
+      <iframe id="trailer" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+          <div class="footer-col">
+            <h4>Information</h4> 
+            <ul>
+              <li><a href="/html/about.html">About</a></li>
+              <li><a href="/html/contact.html">Contact Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Films</h4>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Highest Rating</a></li>
+              <li><a href="#">Soon</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">API Service</a></li>
+              <li><a href="#">Advertisement</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com/bayramof_2/"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Bayramof. All rights deserved.</p>
+          <ul class="footer-links">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <!-- Javascript code-->
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        const seriesId = params.get("id");
+
+        fetch("../data/series.json")     /* Reading film.json file*/
+        .then(res => res.json())        /* .json make array*/
+        .then(data => {                 /* .find array-in içində id-si URL-dən gələn filmId-yə bərabər olan bir filmi tapır*/
+            const series = data.find(f => f.id === seriesId);
+            if (series) {
+                document.getElementById("title").textContent = series.title;      /* .textContent = series.title → onu filmdəki title'ile doldurur*/
+                document.getElementById("trailer").src = series.trailer;
+                document.getElementById("poster").src = series.image;
+                document.getElementById("genre").textContent = series.genre;
+                document.getElementById("director").textContent = series.director;
+                document.getElementById("actors").textContent = series.actors;
+                document.getElementById("description").textContent = series.description;
+                document.getElementById("year").textContent = series.year;
+                document.getElementById("imdb").textContent = series.imdb_rating;
+            }   
+            else {
+                document.getElementById("series-container").innerHTML = "<p>Series can't find</p>";
+            }
+        });
+      </script>
+
+</body>
+</html>

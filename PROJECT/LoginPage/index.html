@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF8" />
+    <title>Register </title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box" id="formBox">
+        <h2 id="formTitle">Login</h2>
+  
+        <!-- Sign Up Only Fields -->
+        <div id="signupFields" style="display: none;">
+          <input type="text" id="firstName" placeholder="Name">
+          <input type="text" id="lastName" placeholder="Surname">
+          <input type="email" id="email" placeholder="Email ">
+          <input type="date" id="birthdate" placeholder="Birth Date">
+        </div>
+  
+        <!-- Common Fields -->
+        <input type="text" id="username" placeholder="Username"/>
+        <input type="password" id="password" placeholder="Password"/>
+  
+        <button onclick="handleAction()">Login</button>
+  
+        <p id="toggleText">
+          Don't have an account? 
+          <a href="#" onclick="toggleForm()">SignUp</a>
+        </p>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

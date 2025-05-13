@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmMania - Movies</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/slider.css"/>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../html/index.html">FilmMania</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/movies.html">Movies</a></li>
+          <li><a href="../html/series.html">Series</a></li>
+          <li><a href="../html/about.html">About</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+        <div class="login-btn">
+          <a href="../LoginPage/index.html">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SLIDER BOX -->
+
+    <div class="slider-box">
+      <h2 class="slider-title">Most Viewed</h2>
+  
+      <div class="carousel-container">
+        <button class="navi prev">&#10094;</button>
+  
+        <div class="carousel">
+          <div class="carousel-track">
+            <a href="film.html?id=joker">
+              <div class="slide">
+                <img src="../images/joker.jpg" alt="Joker">
+                <p>Joker</p>
+              </div>
+            </a>
+            <a href="film.html?id=interstellar">
+              <div class="slide">
+                <img src="../images/interstellar.jpg" alt="Interstellar">
+                <p>Interstellar</p>
+              </div>
+            </a>
+            <a href="film.html?id=spider_man_across_the_spider_verse">
+              <div class="slide">
+                <img src="../images/spiderman_across_the_spider-verse.jpg" alt="spiderman_across_the_spider-verse">
+                <p>Spider-Man: Across the Spider-Verse</p>
+              </div>
+            </a>
+            <a href="film.html?id=the_godfather">
+              <div class="slide">
+                <img src="../images/godfather.jpg" alt="Godfather">
+                <p>Godfather</p>
+              </div>
+            </a>
+            <a href="film.html?id=django_unchained">
+              <div class="slide">
+                <img src="../images/django.jpg" alt="Django">
+                <p>Django</p>
+              </div>
+            </a>
+            <a href="film.html?id=i_am_legend">
+              <div class="slide">
+                <img src="../images/i_am_legend.jpg" alt="I am Legend">
+                <p>I am Legend</p>
+              </div>
+            </a>
+            <a href="film.html?id=fury">
+              <div class="slide">
+                <img src="../images/fury.jpeg" alt="Fury">
+                <p>Fury</p>
+              </div>
+            </a>
+            <a href="film.html?id=top_gun_maverick">
+              <div class="slide">
+                <img src="../images/top_gun_maverick.jpg" alt="Top Gun Maverick">
+                <p>Top Gun Maverick</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="navi next">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="home-content">
+      
+      <!-- MOVIE GRID -->
+      <section class="movie-grid">
+        
+        <!-- Movie Card Start -->
+        <a href="film.html?id=the_pianist" class="movie-card-horizontal">
+          <img src="../images/the_pianist.jpeg" alt="The Pianist"/>
+          <div class="movie-info">
+            <h3>The Pianist</h3>
+            <p><strong>Year:</strong> 2002</p>
+            <p><strong>IMDb:</strong> 8.5</p>
+            <p class="comment">A silent war, a louder soul</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=the_lion_king" class="movie-card-horizontal">
+          <img src="../images/the_lion_king.jpg" alt="The Lion King"/>
+          <div class="movie-info">
+            <h3>The Lion King</h3>
+            <p><strong>Year:</strong> 1994</p>
+            <p><strong>IMDb:</strong> 8.5</p>
+            <p class="comment">A legacy born under the stars</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=the_godfather" class="movie-card-horizontal">
+          <img src="../images/godfather.jpg" alt="The Godfather"/>
+          <div class="movie-info">
+            <h3>The Godfather</h3>
+            <p><strong>Year:</strong> 1972</p>
+            <p><strong>IMDb:</strong> 9.2</p>
+            <p class="comment">An epic tale of power and loyalty</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=spider_man_across_the_spider_verse" class="movie-card-horizontal">
+          <img src="../images/spiderman_across_the_spider-verse.jpg" alt="Spider-Man: Across the Spider-Verse"/>
+          <div class="movie-info">
+            <h3>Spider-Man: Across the Spider-Verse</h3>
+            <p><strong>Year:</strong> 2023</p>
+            <p><strong>IMDb:</strong> 8.5</p>
+            <p class="comment">Infinite worlds, one Spider-Man</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=interstellar" class="movie-card-horizontal">
+          <img src="../images/interstellar.jpg" alt="Interstellar"/>
+          <div class="movie-info">
+            <h3>Interstellar </h3>
+            <p><strong>Year:</strong> 2014</p>
+            <p><strong>IMDb:</strong> 8.7</p>
+            <p class="comment">Love transcends time and space</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=dune_part_two" class="movie-card-horizontal">
+          <img src="../images/dune_part_two.jpg" alt="Dune: Part Two"/>
+          <div class="movie-info">
+            <h3>Dune: Part Two </h3>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>IMDb:</strong> 8.5</p>
+            <p class="comment">Destiny runs deep in the sand</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=memento" class="movie-card-horizontal">
+          <img src="../images/memento.jpg" alt="Memento"/>
+          <div class="movie-info">
+            <h3>Memento </h3>
+            <p><strong>Year:</strong> 2000</p>
+            <p><strong>IMDb:</strong> 8.4</p>
+            <p class="comment">Forget to remember, remember to forge</p>
+          </div>
+        </a>
+    
+        <a href="film.html?id=fight_club" class="movie-card-horizontal">
+          <img src="../images/the_fight_club.jpg" alt="Fight Club"/>
+          <div class="movie-info">
+            <h3>Fight Club</h3>
+            <p><strong>Year:</strong> 1999</p>
+            <p><strong>IMDb:</strong> 8.8</p>
+            <p class="comment">The first rule: this comment doesn't exist</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=spider_man_into_the_spider_verse" class="movie-card-horizontal">
+          <img src="../images/spiderman_into_the_spider-verse.jpg" alt="Spider-Man: Into the Spider-Verse"/>
+          <div class="movie-info">
+            <h3>Spider-Man: Into the Spider-Verse</h3>
+            <p><strong>Year:</strong> 2000</p>
+            <p><strong>IMDb:</strong> 8.4</p>
+            <p class="comment">Anyone can wear the mask</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=matrix" class="movie-card-horizontal">
+          <img src="../images/the_matrix.jpg" alt="The Matrix" />
+          <div class="movie-info">
+            <h3>The Matrix </h3>
+            <p><strong>Year:</strong> 1999</p>
+            <p><strong>IMDb:</strong> 8.7</p>
+            <p class="comment">What if reality is a choice?</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=" class="movie-card-horizontal">
+          <img src="../images/se7en.jpg" alt="Se7en" />
+          <div class="movie-info">
+            <h3>Se7en</h3>
+            <p><strong>Year:</strong> 1995</p>
+            <p><strong>IMDb:</strong> 8.6</p>
+            <p class="comment">What’s in the box… is unforgettable</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=coco" class="movie-card-horizontal">
+          <img src="../images/coco.jpg" alt="Coco" />
+          <div class="movie-info">
+            <h3>Coco</h3>
+            <p><strong>Year:</strong> 2017</p>
+            <p><strong>IMDb:</strong> 8.4</p>
+            <p class="comment">A melody never truly dies</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=toy_story" class="movie-card-horizontal">
+          <img src="../images/toy_story.jpg" alt="Toy Story" />
+          <div class="movie-info">
+            <h3>Toy Story</h3>
+            <p><strong>Year:</strong> 1995</p>
+            <p><strong>IMDb:</strong> 8.3</p>
+            <p class="comment">To infinity and your childhood</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=avengers_endgame" class="movie-card-horizontal">
+          <img src="../images/avengers_endgame.jpg" alt="Avengers: Endgame" />
+          <div class="movie-info">
+            <h3>Avengers: Endgame</h3>
+            <p><strong>Year:</strong> 2019</p>
+            <p><strong>IMDb:</strong> 8.4</p>
+            <p class="comment">Whatever it takes</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=braveheart" class="movie-card-horizontal">
+          <img src="../images/brave_heart.jpg" alt="Brave Heart" />
+          <div class="movie-info">
+            <h3>Brave Heart</h3>
+            <p><strong>Year:</strong> 1995</p>
+            <p><strong>IMDb:</strong> 8.3</p>
+            <p class="comment">They may take our lives...</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=joker" class="movie-card-horizontal">
+          <img src="../images/joker.jpg" alt="Joker" />
+          <div class="movie-info">
+            <h3>Joker</h3>
+            <p><strong>Year:</strong> 2019</p>
+            <p><strong>IMDb:</strong> 8.3</p>
+            <p class="comment">All it takes is one bad day</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=logan" class="movie-card-horizontal">
+          <img src="../images/logan.jpeg" alt="Logan" />
+          <div class="movie-info">
+            <h3>Logan</h3>
+            <p><strong>Year:</strong> 2017</p>
+            <p><strong>IMDb:</strong> 8.1</p>
+            <p class="comment">The end of a legend, the birth of pain</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=rush" class="movie-card-horizontal">
+          <img src="../images/rush.jpg" alt="Rush" />
+          <div class="movie-info">
+            <h3>Rush</h3>
+            <p><strong>Year:</strong> 2013</p>
+            <p><strong>IMDb:</strong> 8.1</p>
+            <p class="comment">Rivalry fueled by passion and speed</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=sinners" class="movie-card-horizontal">
+          <img src="../images/sinners.jpg" alt="Sinners" />
+          <div class="movie-info">
+            <h3>Sinners</h3>
+            <p><strong>Year:</strong> 2025</p>
+            <p><strong>IMDb:</strong> 8.1</p>
+            <p class="comment"> No saint survives without sin</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=the_wild_robot" class="movie-card-horizontal">
+          <img src="../images/the_wild_robot.jpg" alt="The Wild Robot" />
+          <div class="movie-info">
+            <h3>The Wild Robot</h3>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>IMDb:</strong> 8.2</p>
+            <p class="comment">Even machines can have a heart</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=warrior" class="movie-card-horizontal">
+          <img src="../images/warrior.jpg" alt="Warrior" />
+          <div class="movie-info">
+            <h3>Warrior</h3>
+            <p><strong>Year:</strong> 2011</p>
+            <p><strong>IMDb:</strong> 8.1</p>
+            <p class="comment">Brothers in blood. Enemies in the ring</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=1917" class="movie-card-horizontal">
+          <img src="../images/1917.jpg" alt="1917" />
+          <div class="movie-info">
+            <h3>1917</h3>
+            <p><strong>Year:</strong> 2019</p>
+            <p><strong>IMDb:</strong> 8.2</p>
+            <p class="comment">Every step could be your last</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=django_unchained" class="movie-card-horizontal">
+          <img src="../images/django.jpg" alt="Django" />
+          <div class="movie-info">
+            <h3>Django</h3>
+            <p><strong>Year:</strong> 2012</p>
+            <p><strong>IMDb:</strong> 8.5</p>
+            <p class="comment">Freedom rides with a loaded gun</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=the_martian",
+        "title": "The Mart" class="movie-card-horizontal">
+          <img src="../images/martian.jpeg" alt="The Martian" />
+          <div class="movie-info">
+            <h3>The Martian</h3>
+            <p><strong>Year:</strong> 2015</p>
+            <p><strong>IMDb:</strong> 8.0</p>
+            <p class="comment">I'm gonna science the hell out of this</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=v_for_vendetta" class="movie-card-horizontal">
+          <img src="../images/v_for_vendetta.jpg" alt="V for Vendetta" />
+          <div class="movie-info">
+            <h3>V for Vendetta</h3>
+            <p><strong>Year:</strong> 2005</p>
+            <p><strong>IMDb:</strong> 8.1</p>
+            <p class="comment">Ideas are bulletproof</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=i_am_legend" class="movie-card-horizontal">
+          <img src="../images/i_am_legend.jpg" alt="I am Legend" />
+          <div class="movie-info">
+            <h3>I am Legend</h3>
+            <p><strong>Year:</strong> 2007</p>
+            <p><strong>IMDb:</strong> 7.2</p>
+            <p class="comment">The last man stands with a dog and a hope</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=the_maze_runner" class="movie-card-horizontal">
+          <img src="../images/maze_runner.jpg" alt="Maze Runner" />
+          <div class="movie-info">
+            <h3>Maze Runner</h3>
+            <p><strong>Year:</strong> 2014</p>
+            <p><strong>IMDb:</strong> 6.8</p>
+            <p class="comment">The way out is through</p>
+          </div>
+        </a>
+
+        <a href="film.html?id=jumper" class="movie-card-horizontal">
+          <img src="../images/jumper.jpg" alt="Jumper" />
+          <div class="movie-info">
+            <h3>Jumper</h3>
+            <p><strong>Year:</strong> 2008</p>
+            <p><strong>IMDb:</strong> 6.1</p>
+            <p class="comment">Anywhere. Anytime. Just blink</p>
+          </div>
+        </a>
+
+        <!-- Change and Add -->
+
+      </section>
+
+      <section >
+        <ul class="pagination">
+          <li><a href="#" class="active">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </section>
+
+
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Information</h4> 
+          <ul>
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/contact.html">Contact Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Films</h4>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Highest Rating</a></li>
+            <li><a href="#">Soon</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Premium</a></li>
+            <li><a href="#">API Service</a></li>
+            <li><a href="#">Advertisement</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111392.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/bayramof_2/"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Bayramof. All rights deserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="../javascript/slider.js"></script>
+     
+  </body>
+</html>

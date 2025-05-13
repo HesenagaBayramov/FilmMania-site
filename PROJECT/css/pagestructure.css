@@ -1,0 +1,89 @@
+#film-container {
+    max-width: 1000px;
+    margin: auto;
+    background: #222;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#film-container h1 {
+    font-size: 36px;
+    text-align: left; 
+}
+
+#content-wrapper {
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Film Poster*/
+img {
+    flex-shrink: 0; 
+    width: 250px;
+    height: 350px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Trailler Video*/
+
+.trailervideo {
+    max-width: 1000px;
+    margin: auto;
+    background: #222;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+iframe {
+    max-width: 100%;
+    margin-left: 80px;
+}
+
+
+/* Film INfo*/
+#filminfo {
+    flex: 1; /* Qalan boşluğu doldurur */
+}
+ 
+#filminfo p {
+    font-size: 14px;
+    line-height: 1;
+}
+
+#filminfo table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2e2e2e;
+}
+  
+#filminfo table td {
+    padding: 5px;
+    border: 1px solid #444;
+    height: 10px;
+}
+  
+#filminfo table td:first-child {
+    font-weight: bold;
+    width: 14%; /* left column */
+}
+
+
+/*Description*/
+#description {
+    background-color: #333;
+    width: 690px;
+    overflow-y: auto; /* Yaylanma çubuğu görünər */
+    border-radius: 10px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    
+}

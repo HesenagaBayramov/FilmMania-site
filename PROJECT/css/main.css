@@ -1,0 +1,275 @@
+/*----- Home Page Main Content -----*/
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+  
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #facc15;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+  
+.btn:hover {
+    background-color: #ffd700;
+}
+
+
+/* Movie Section */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+  
+.movie-card-horizontal {
+    display: flex;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+  
+.movie-card-horizontal:hover {
+    transform: scale(1.02);
+}
+  
+.movie-card-horizontal img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-card-h2 {
+    text-align: center;
+}
+  
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.movie-info h3 {
+    margin: 0 0 10px;
+}
+  
+.movie-info p {
+    margin: 4px 0;
+}
+  
+.comment {
+    font-style: italic;
+    color: #ccc;
+}
+
+
+/*Pagination*/
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 50px;
+}
+      
+.pagination li {
+    margin: 0 5px;
+}
+      
+.pagination a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+      
+.pagination a:hover {
+    background-color: #facc15;
+}
+      
+.pagination a.active {
+    background-color: #ffd700;
+    color: black;
+}
+      
+
+/*----- Series Page Main Content -----*/
+
+/* Series Section */
+.series-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+  
+.series-card-horizontal {
+    display: flex;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s; 
+}
+  
+.series-card-horizontal:hover {
+    transform: scale(1.02);
+}
+  
+.series-card-horizontal img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.series-card-h2 {
+    text-align: center;
+}
+  
+.series-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.series-info h3 {
+    margin: 0 0 10px;
+}
+  
+.series-info p {
+    margin: 4px 0;
+}
+
+/*----- About Page Main Content -----*/
+
+.about-container {
+    max-width: 800px;
+    margin:  30px auto ;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+  
+.about-container h1 {
+    color: #f1c40f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+  
+.about-container h2 {
+    color: #f39c12;
+    margin-top: 25px;
+}
+  
+.about-container p, .about-container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+  
+.about-container ul {
+    padding-left: 20px;
+}
+  
+.about-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+  
+.about-footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+  
+.about-footer a:hover {
+    text-decoration: underline;
+}
+
+/*----- Contact Page Main Content -----*/
+
+.contact-container {
+    max-width: 600px;
+    margin: 60px auto;
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-container h1 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-intro {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    background-color: #4a4a4a;
+  }
+  
+  .contact-form button {
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #d4ac0d;
+  }
+  
